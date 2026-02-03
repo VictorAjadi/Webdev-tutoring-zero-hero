@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.card {
+    background: #ddebf8;
+    width:  500px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 8px solid #d8cefe;
+}
+.card-body{ 
+    text-align: center;
+}
+.card-image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.card-header {
+    font-weight: bold;
+}
+.card-footer {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.dotted-blue {
+    border: 1px dotted blue;
+}
