@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Orbitron:wght@400..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Relief', cursive;
+    background-color: #a2d2ff;
+    color: #ffffff;
+    text-align: center;
+}
+h1, h2, h3, h4{
+    text-shadow: 0px 0px 1px black;
+}
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #EFB0C9;
+    margin-top: 20px;
+}
+
+#age, #years-old{
+    background-color: #EFB0C9;
+    color: white;
+    padding: 6px 14px;
+    width: max-content;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-shadow: 0px 0px 2px black;
+}
+
+#gift-message{
+    max-width: 400px;
+    margin: 20px auto;
+}
+.gift-box{
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    background-image: url("images/gift-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffb703;
+    border: 5px solid white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+#gift-hover-text, #gift-message{
+    margin: 0 auto;
+    padding: 0;
+}
+#gift-hover-text{
+    margin-top: 8px;
+}
+#gift-box-smile:hover {
+    background-image: url("images/Happy\ Episode\ 8\ GIF\ by\ PBS.gif");
+}
+#gift-box-happy:hover {
+    background-image: url("images/Happy\ Merve\ Dizdar\ GIF\ by\ TRT.gif");
+}
+#gift-box-badass:hover {
+    background-image: url("images/Terminator\ 2\ Mood\ GIF\ by\ 20th\ Century\ Studios.gif");
+}
+a {
+    color: white;
+}
