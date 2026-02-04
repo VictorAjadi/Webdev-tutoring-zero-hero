@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#hero-section{
+ background-image: url("images/david-kristianto-F1KNNSWik9A-unsplash.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+ height: 250px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 8px;
+}
+#hero-section h2{
+    text-shadow: 0px 0px 3px #000000;
+    background-color: rgb(18, 111, 145);
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+#hero-section p{
+    text-shadow: 0px 0px 3px #000000;
+    background-color: rgb(3, 28, 83);
+    border-radius: 6px;
+    padding: 4px 2px;
+    max-width: 320px;
+}
+#activity-section{
+    background-color: rgb(232, 242, 232);
+    padding: 15px 25px;
+}
+#activity-section h3{
+    text-align: center;
+    color: rgb(3, 28, 83);
+    margin-bottom: 20px;
+}
+
+#activity-section #item{
+    display: flex;
+    justify-content: space-between;
+}
+
+#activity-section .activity{
+    text-align: center;
+    width: 30%;
+}
+#activity-section img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+#activity-section .activity h5, #activity-section .activity p, #turist-info{
+    color: rgb(3, 28, 83);
+}
+#activity-section .activity p{
+    font-size: 12px;
+    margin-top: 8px;
+}
+#turist-info-section{
+    padding: 15px 25px;
+}
+#turist-info-section h3{
+    text-align: center;
+    color: rgb(3, 28, 83);
+    margin-bottom: 10px;
+}
+#turist-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    background-color: #b4dbff;
+    border-bottom: 4px solid rgb(3, 28, 83);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+#turist-card img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+#turist-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+#turist-info p{
+    font-style: oblique;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
