@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Comic Relief', cursive;
-    background-color: #a2d2ff;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
     color: #ffffff;
     text-align: center;
 }
@@ -33,13 +33,12 @@ h1, h2, h3, h4{
     margin: 20px auto;
 }
 .gift-box{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin: 20px auto;
     background-image: url("images/gift-cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #ffb703;
     border: 5px solid white;
     border-radius: 10px;
     position: relative;
