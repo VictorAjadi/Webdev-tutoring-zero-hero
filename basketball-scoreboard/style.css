@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'SevenSegment';
+  src: url('fonts/7segment.ttf') format('truetype'); /* Use the TTF file and format */
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    background-color: rgb(222, 184, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(39, 11, 75);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 25px 25px 25px;
+    width: 400px;
+}
+#scoreboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.team{
+    text-align: center;
+}
+.score{
+    background-color: black;
+    color: white;
+    font-size: 4em;
+    border-radius: 5px;
+    width: 110px;
+    margin: 10px 0px;
+    font-family: 'SevenSegment', sans-serif;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+button{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 4px;
+    font-family: 'SevenSegment', sans-serif;
+    font-weight: bold;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}

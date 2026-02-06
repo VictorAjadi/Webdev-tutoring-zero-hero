@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <div class="container">
+        <div id="scoreboard">
+          <div class="team">
+            <h2>TEAM A</h2>
+            <div id="team-a-score" class="score">0</div>
+            <div id="team-a-buttons" class="buttons">
+                <button id="btn-a-1" data-team="A" data-point="1" type="button">+1</button>
+                <button id="btn-a-2" data-team="A" data-point="2" type="button">+2</button>
+                <button id="btn-a-3" data-team="A" data-point="3" type="button">+3</button>
+            </div>
+          </div>
+          <div class="team">
+                <h2>TEAM B</h2>
+                <div id="team-b-score" class="score">0</div>
+                <div id="team-b-buttons" class="buttons">
+                    <button id="btn-b-1" data-team="B" data-point="1" type="button">+1</button>
+                    <button id="btn-b-2" data-team="B" data-point="2" type="button">+2</button>
+                    <button id="btn-b-3" data-team="B" data-point="3" type="button">+3</button>
+                </div>
+          </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
