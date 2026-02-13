@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "openai": "./node_modules/openai/index.mjs"
+            }
+        }
+    </script>
+
+    <title>AI Engineering</title>
+</head>
+<body>
+    <main id="hero">
+        <div id="hero-title">
+            <p class="f-l">Dodgy</p>    
+            <img src="images/magician.jpg" id="hero-img" alt="magician logo">
+            <p class="f-l">Dave's</p>
+        </div>
+        <p>Stock Predictions</p>
+    </main>
+    <div style="flex-grow: 1;min-height: 500px;">
+        <div id="action-panel">
+            <div id="message-div">
+                Add up to 3 stock tickers below to get a super accurate stock predictions report 👇
+            </div>
+            <form action="" id="stock-form">
+                <input type="text" name="ticker-input" id="ticker-input" placeholder="MSFT">
+                <button type="submit" id="stock-form-btn">+</button>
+            </form>
+            <section id="content">
+                <div id="ticker-list">Your tickers will appear here...</div>
+                <button type="button" id="report-btn" disable="true">GENERATE REPORT</button>
+                <p id="ticker-prediction">Always correct 15% of the time!</p>
+            </section>
+        </div>
+        <section id="stock-report">
+            <div id="report-loading">
+            <div class="loading-spinner"></div>
+            <p id="report-loading-text">Generating Report...</p>
+            </div>
+        </section>
+    </div>
+    <footer>@ This is not real financial advice!</footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
