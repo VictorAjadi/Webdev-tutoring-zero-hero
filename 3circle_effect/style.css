@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #351435;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 0.4s;
+    letter-spacing: 2px;
+    border-radius: 15px;
+}
+
+a::before,a::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #351435;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: -1;
+}
+a::before{
+   left: 0;
+   /* it accepts 4 values 
+   1. horizontal distance btw the element and the shadow we are adding 
+   2. the vertical distance btw the element and the shadow
+   3. how blurry the shadow will be
+   4. color
+   */
+   box-shadow: -100px 0 0 #351435;
+}
+a::after{
+   right: 0;
+   box-shadow: 100px 0 0 #351435;
+}
+a:hover::before{
+    left: 50%;
+    box-shadow: 30px 0 0 #351435;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+}
+a:hover::after{
+    right: 50%;
+    box-shadow: -30px 0 0 #351435;
+    transform: translateX(50%) translateY(-50%);
+    opacity: 1;
+}
+a:hover{
+    transform: scale(1.1);
+    transition-delay: 0.3s;
+    color:  white;
+    background-color: #351435;
+}

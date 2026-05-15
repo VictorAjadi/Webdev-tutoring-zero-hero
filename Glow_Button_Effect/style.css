@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 1s;
+    letter-spacing: 2px;
+    background-color: #351435;
+}
+
+a::before,a::after{
+  content: 'Button';
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2ce771;
+  transform: rotateX(270deg);
+  transition: all 1s;
+  transform-origin: top;
+  transition-timing-function: ease-out;
+}
+a::after{
+    transition-delay: 0.3s;
+    background-color: red;
+}
+a:hover::before, a:hover::after{
+    transform: rotateX(0deg);
+}
+a:hover{
+    color:  white;
+    background-color: #351435;
+}
